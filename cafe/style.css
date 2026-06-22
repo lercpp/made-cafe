@@ -28,8 +28,6 @@ body{
     var(--bg);
 }
 
-/* NAVBAR */
-
 nav{
     position:fixed;
     top:0;
@@ -76,7 +74,6 @@ nav{
     color:var(--pink);
 }
 
-/* HERO */
 
 .hero{
     min-height:100vh;
@@ -122,8 +119,6 @@ nav{
     0 0 80px rgba(255,124,183,.15);
 }
 
-/* BUTTON */
-
 .btn{
     display:inline-block;
 
@@ -145,14 +140,12 @@ nav{
     box-shadow:
     0 0 25px rgba(255,79,157,.4);
 
-    transition:.3s;
+    transition:0.5s;
 }
 
 .btn:hover{
-    transform:translateY(-4px);
+    transform: scale(1.1);
 }
-
-/* SECTIONS */
 
 section{
     max-width:1200px;
@@ -169,7 +162,6 @@ section{
     margin-bottom:60px;
 }
 
-/* CARDS */
 
 .cards{
     display:grid;
@@ -206,8 +198,6 @@ section{
     line-height:1.7;
 }
 
-/* MENU */
-
 .menu-grid{
     display:grid;
     grid-template-columns:
@@ -237,7 +227,6 @@ section{
     color:var(--pink);
 }
 
-/* BOOKING */
 
 .booking{
     text-align:center;
@@ -249,8 +238,8 @@ section{
     background:
     linear-gradient(
         135deg,
-        rgba(255,124,183,.12),
-        rgba(255,255,255,.03)
+        rgba(132, 34, 78, 0.193),
+        rgba(180, 77, 125, 0.411)
     );
 }
 
@@ -260,8 +249,6 @@ section{
 
     color:var(--gray);
 }
-
-/* FOOTER */
 
 footer{
     text-align:center;
@@ -274,7 +261,6 @@ footer{
     1px solid rgba(255,255,255,.08);
 }
 
-/* RESPONSIVE */
 
 max-width:900px{
 
