@@ -24,7 +24,9 @@
                 <a href="#">Меню</a>
                 <a href="main.html">События</a>
                 <a href="main.html">Бронь</a>
-                <a href="korzina.html">Корзина</a>
+                <a href="korzina.html">
+                Корзина (<span id="cartCount">0</span>)
+                </a>
                 <a href="profil.html">Профиль</a>
             </div>
         </div>
@@ -76,8 +78,8 @@
 
                     <span class="price">450 ₽</span>
 
-                    <button>
-                         Добавить
+                    <button class="add-to-cart" data-id="1">
+                    Добавить
                     </button>
 
                 </div>
@@ -113,7 +115,7 @@
 
                     <span class="price">900 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -149,7 +151,7 @@
 
                     <span class="price">800 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -185,7 +187,7 @@
 
                     <span class="price">570 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -233,10 +235,9 @@
 
                     <span class="price">380 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
-
                 </div>
 
             </div>
@@ -270,7 +271,7 @@
 
                     <span class="price">870 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -307,7 +308,7 @@
 
                     <span class="price">650 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -344,7 +345,7 @@
 
                     <span class="price">900 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -381,7 +382,7 @@
 
                     <span class="price">720 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -418,7 +419,7 @@
 
                     <span class="price">1000 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -454,7 +455,7 @@
 
                     <span class="price">760 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -490,7 +491,7 @@
 
                     <span class="price">1090 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -537,7 +538,7 @@
 
                     <span class="price">490 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -574,7 +575,7 @@
 
                     <span class="price">550 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -611,7 +612,7 @@
 
                     <span class="price">450 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -648,10 +649,9 @@
 
                     <span class="price">730 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
-
                 </div>
 
             </div>
@@ -684,7 +684,7 @@
 
                     <span class="price">800 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -730,7 +730,7 @@
 
                     <span class="price">450 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -766,7 +766,7 @@
 
                     <span class="price">540 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -802,7 +802,7 @@
 
                     <span class="price">380 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -847,7 +847,7 @@
 
                     <span class="price">750 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)"> 
                          Добавить
                     </button>
 
@@ -883,7 +883,7 @@
 
                     <span class="price">640 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -919,7 +919,7 @@
 
                     <span class="price">460 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -946,7 +946,7 @@
             </div>
             <div class="bottom">
                 <span class="price">380 ₽</span>
-                <button>
+                <button onclick="addToCart(1)">
                      Добавить
                 </button>
             </div>
@@ -971,7 +971,7 @@
             </div>
             <div class="bottom">
                 <span class="price">660 ₽</span>
-                <button>
+                <button onclick="addToCart(1)">
                      Добавить
                 </button>
             </div>
@@ -996,7 +996,7 @@
             </div>
             <div class="bottom">
                 <span class="price">870 ₽</span>
-                <button>
+                <button onclick="addToCart(1)">
                      Добавить
                 </button>
             </div>
@@ -1021,7 +1021,7 @@
             </div>
             <div class="bottom">
                 <span class="price">380 ₽</span>
-                <button>
+                <button onclick="addToCart(1)">
                      Добавить
                 </button>
             </div>
@@ -1046,9 +1046,10 @@
             </div>
             <div class="bottom">
                 <span class="price">380 ₽</span>
-                <button>
+                <button onclick="addToCart(1)">
                      Добавить
                 </button>
+    
             </div>
         </div>
         </div> 
@@ -1087,9 +1088,10 @@
 
                     <span class="price">350 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
+
 
                 </div>
 
@@ -1123,7 +1125,7 @@
 
                     <span class="price">850 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
 
@@ -1159,10 +1161,9 @@
 
                     <span class="price">250 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
-
                 </div>
 
             </div>
@@ -1195,10 +1196,9 @@
 
                     <span class="price">850 ₽</span>
 
-                    <button>
+                    <button onclick="addToCart(1)">
                          Добавить
                     </button>
-
                 </div>
 
             </div>

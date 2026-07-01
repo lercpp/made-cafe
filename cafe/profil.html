@@ -32,9 +32,43 @@
             <button type="submit" class="login-btn">Войти</button>
         </form>
 
+        <script>
+document.getElementById("registerForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+
+    const response = await fetch("http://127.0.0.1:8000/register", {
+        method: "POST",
+        body: JSON.stringify({
+            username: formData.get("username"),
+            password: formData.get("password")
+        }),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    });
+
+    console.log(await response.json());
+});
+</script>
+
         <div class="footer-links">
-            <p><a href="#">Забыли пароль?</a></p>
-            <p>Нет аккаунта? <a href="#">Регистрация</a></p>
+            <p>Нет аккаунта? <a href="reg.html">Регистрация</a></p>
+            <script>
+async function addToCart(productId) {
+    await fetch("http://127.0.0.1:8000/cart/add", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            user_id: 1,
+            product_id: productId
+        })
+    });
+
+    updateCartCount();
+}
+</script>
         </div>
     </div>
     

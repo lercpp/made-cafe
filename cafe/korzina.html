@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yami Maid Café</title>
+    <link rel="icon" href="foto/cat.jpg" type="image/png">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>🛒 Корзина</h1>
+
+    <div id="cart">
+
+    </div>
+
+    <div id="total">
+        Итого: 0 ₽
+    </div>
+
+    <button id="checkout">
+        Оформить заказ
+    </button>
+
+    <script>
+
+        async function loadCart(){
+
+            const response = await fetch("http://127.0.0.1:8000/cart/1");
+
+            const products = await response.json();
+
+            const cart = document.getElementById("cart");
+
+            cart.innerHTML = "";
+
+            let total = 0;
+
+            products.forEach(product => {
+
+                total += product.price;
+
+                cart.innerHTML += `
+                    <div class="item">
+
+                        <div class="info">
+                            <h3>${product.name}</h3>
+                            <p>${product.price} ₽</p>
+                        </div>
+
+                        <button onclick="removeProduct(${product.id})">
+                            Удалить
+                        </button>
+
+                    </div>
+                `;
+
+            });
+
+            document.getElementById("total").textContent =
+                "Итого: " + total + " ₽";
+        }
+
+        async function removeProduct(id){
+
+            await fetch(`http://127.0.0.1:8000/cart/remove/${id}`,{
+                method:"DELETE"
+            });
+
+            loadCart();
+        }
+
+        loadCart();
+
+    </script>
+
+</body>
+</html>
