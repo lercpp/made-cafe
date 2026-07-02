@@ -225,46 +225,6 @@ section{
     color:var(--pink);
 }
 
-
-.booking{
-    text-align:center;
-
-    padding:70px 30px;
-
-    border-radius:30px;
-
-    background:
-    linear-gradient(
-        135deg,
-        rgba(132, 34, 78, 0.193),
-        rgba(180, 77, 125, 0.411)
-    );
-}
-
-.booking p{
-    max-width:650px;
-    margin:20px auto 35px;
-
-    color:var(--gray);
-}
-
-
-max-width:900px{
-
-    .hero{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
-
-    .hero-text h1{
-        font-size:3rem;
-    }
-
-    .nav-links{
-        display:none;
-    }
-}
-
 .footer {
     color:#9b8f99;
     background:rgba(15,10,18,.8);

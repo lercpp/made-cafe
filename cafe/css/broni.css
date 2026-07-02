@@ -1,0 +1,125 @@
+:root{
+    --bg:#0f0a12;
+    --card:#1a1220;
+    --pink:#ff7cb7;
+    --pink-soft:#ffd7e8;
+    --accent:#ff4f9d;
+    --text:#f8eef5;
+    --gray:#bcaeb8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Inter',sans-serif;
+    color:var(--text);
+    background:
+    radial-gradient(circle at top right,#47223d 0%,transparent 30%),
+    radial-gradient(circle at bottom left,#28131f 0%,transparent 35%),
+    var(--bg);
+}
+
+.but button {
+    position: fixed;      
+    top: 15px;            
+    left: 20px;          
+
+    padding: 12px 20px;
+    background: #ce2aaa;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    border: #0f0a12;
+
+    box-shadow: 0 5px 15px rgba(206, 19, 197, 0.2);
+    transition: 0.5s;
+    z-index: 1000;       
+}
+
+.but button:hover {
+    background: #aa0b72;
+}
+
+
+.booking-card {
+    width: 400px;
+     background:rgb(18, 12, 20);
+    border-bottom:1px solid rgba(135, 67, 128, 0.21);
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(129, 23, 106, 0.485);
+}
+
+.booking-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Playfair Display', serif;
+    color: #f5dbed;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    background-color: #130b1b; 
+    color: #d8caca;               
+    border: 1px solid #b08cd6;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.input-group input::placeholder {
+    color: #e3d8d8; 
+}
+
+.input-group {
+    margin-bottom: 18px;
+
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #d7c2c2;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #281428;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: .2s;
+}
+
+.input-group input:focus {
+    border-color: #191221;
+    box-shadow: 0 0 0 3px rgba(94, 0, 194, 0.2);
+}
+
+.book-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: #e211a3;
+    color: rgb(252, 239, 245);
+    font-size: 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.book-btn:hover {
+    background: #b00379;
+}

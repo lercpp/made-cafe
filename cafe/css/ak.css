@@ -28,8 +28,6 @@ body {
     var(--bg);
 }
 
-
-/* Карточка профиля */
 .profile-card {
     width: 360px;
     background: #1d1120;
@@ -43,7 +41,29 @@ body {
     text-align: center;
 }
 
-/* Аватар */
+
+.but button {
+    position: fixed;      
+    top: 15px;            
+    left: 20px;          
+
+    padding: 12px 20px;
+    background: #ce2aaa;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    border: #0f0a12;
+
+    box-shadow: 0 5px 15px rgba(206, 19, 197, 0.2);
+    transition: 0.5s;
+    z-index: 1000;       
+}
+
+.but button:hover {
+    background: #aa0b72;
+}
+
 .avatar {
     width: 90px;
     height: 90px;
@@ -58,7 +78,6 @@ body {
     border: 3px solid #aa2985;
 }
 
-/* Заголовок */
 .profile-card h2 {
     font-family: 'Playfair Display', serif;
     font-size: 22px;
@@ -72,7 +91,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Информация */
 .info {
     text-align: left;
     margin-bottom: 20px;
@@ -96,7 +114,6 @@ body {
     margin-top: 3px;
 }
 
-/* Кнопки */
 .btn {
     width: 100%;
     padding: 12px;
@@ -115,7 +132,6 @@ body {
     transform: translateY(-1px);
 }
 
-/* кнопка выхода */
 .logout {
     background: #9a16c2;
 }

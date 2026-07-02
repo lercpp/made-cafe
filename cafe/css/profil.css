@@ -28,6 +28,28 @@ body {
     var(--bg);
 }
 
+.but button {
+    position: fixed;      
+    top: 15px;            
+    left: 20px;          
+
+    padding: 12px 20px;
+    background: #ce2aaa;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    border: #0f0a12;
+
+    box-shadow: 0 5px 15px rgba(206, 19, 197, 0.2);
+    transition: 0.5s;
+    z-index: 1000;       
+}
+
+.but button:hover {
+    background: #aa0b72;
+}
+
 .login-card {
     width: 350px;
     background:rgb(18, 12, 20);
